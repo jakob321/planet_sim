@@ -1,0 +1,66 @@
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+
+  }
+
+  .main {
+    display: flex;
+    height: 100vh;
+  }
+
+  .grid > div {
+    background: #eee;
+  }
+
+  .sideBar {
+    flex: 0 0 130px;
+    background-color: black;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    background: #ddd;
+    flex: 1 0 0;
+  }
+
+  .topBar {
+    display: flex;
+    flex: 0 0 100px;
+    background: #ddd;
+    height: 100px;
+
+    background-color: black;
+  }
+
+  .selectedPlanet {
+    width: 300px;
+    padding: 10px;
+    top: 50%;
+  }
+
+  p {
+    color: white;
+  }
+
+  .canvas {
+    height: 100%;
+    border: 1px solid #101010;
+    flex: 1 0 0;
+  }
+
+  .images > img {
+    padding-top: 50px;
+  }
+
+  .images > img:hover {
+    opacity: 0.5;
+  }
+
+  #canvas {
+    background-color: black;
+  }

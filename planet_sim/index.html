@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="toggle.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+
+  <body>
+    
+    <div class="main">
+      <div class="sideBar">
+        <img src="images/logo.jpg" width="100px" alt="sun" />
+        <div class="images">
+          <img src="images/sun.gif" alt="sun" id="sunImg" onclick="selectedPlanet('sun')"/>
+          <img src="images/earth.gif" alt="earth" id="earthImg" onclick="selectedPlanet('earth')" />
+        </div>
+      </div>
+      <div class="container1">
+        <div class="topBar">
+          <div class="selectedPlanet">
+            <h2 style="color: white">
+              Selected planet: <span id="selectedPlanet"></span>
+            </h2>
+          </div>
+
+          <label class="switch">
+            <input type="checkbox" id="toggle" onclick="toggleFunction()" />
+            <span class="toggle round"></span>
+            <p style="padding-top: 10px;">Locked</p>
+          </label>
+
+          <div class="sliderDiv">
+            <input
+              type="range"
+              min="10"
+              max="200"
+              value="100"
+              id="myRange"
+              class="slider"
+            />
+            <p>Size: <span id="value"></span></p>
+          </div>
+        </div>
+        <div class="canvas">
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
